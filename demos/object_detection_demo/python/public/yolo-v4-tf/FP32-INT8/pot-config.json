@@ -1,0 +1,21 @@
+{
+    "compression": {
+        "algorithms": [
+            {
+                "name": "DefaultQuantization",
+                "params": {
+                    "preset": "mixed",
+                    "stat_subset_size": 300
+                }
+            }
+        ]
+    },
+    "engine": {
+        "config": "/home/helena/venvs/openvino/lib/python3.8/site-packages/openvino/model_zoo/models/public/yolo-v4-tf/accuracy-check.yml"
+    },
+    "model": {
+        "model": "/home/helena/Git/open_model_zoo/demos/object_detection_demo/python/public/yolo-v4-tf/FP32/yolo-v4-tf.xml",
+        "weights": "/home/helena/Git/open_model_zoo/demos/object_detection_demo/python/public/yolo-v4-tf/FP32/yolo-v4-tf.bin",
+        "model_name": "yolo-v4-tf"
+    }
+}
